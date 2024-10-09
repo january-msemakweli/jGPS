@@ -1,0 +1,29 @@
+{
+  "name": "jGPS Data Collector",
+  "short_name": "GeoProj",
+  "description": "An app for saving and managing geolocation data with a custom .jgps file extension.",
+  "version": "1.0.0",
+  "author": "January G. Msemakweli",
+  "email": "msemakwelijanuary@gmail.com",
+  "manifest_version": 2,
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2196f3",
+  "icons": [
+    {
+      "src": "www/img/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "permissions": [
+    "geolocation",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "My Geolocation Project"
+  },
+  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'self'"
+}

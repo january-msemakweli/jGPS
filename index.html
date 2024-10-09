@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <title>jGPS: Data Collector</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <svg viewBox="0 0 512 512" width="50" height="50" title="location-arrow">
+      <path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z" fill="white" />
+    </svg>
+    <div class="header-text">
+      <h2>jGPS: Data Collector</h2>
+      <h3>Msemakweli Research Solutions</h3>
+    </div>
+  </div>
+</header>
+
+  <div class="container">
+    <div class="sidebar">
+      <button id="new-project" class="action-button">Create New Project</button>
+      <button id="load-project" class="action-button">Load Project</button>
+    </div>
+
+    <div class="main-content" id="main-content" style="display: none;">
+      <h2 id="project-title">No Project Loaded</h2>
+      <button id="save-project" class="action-button">Save Project</button>
+      <button id="add-location" class="action-button">Add Location</button>
+
+      <table id="gps-table" class="data-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <button id="export-data" class="action-button">Export Data</button>
+      <button id="close-project" class="action-button close-button">Close Project</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

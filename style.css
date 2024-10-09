@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+
+  /* Add animation for background color */
+  background: linear-gradient(45deg, #ff69b4, #8a2be2, #ffb6c1, #9370db);
+  background-size: 400% 400%;
+  animation: animateBackground 8s ease infinite;
+}
+
+/* Keyframes for background color animation */
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  width: 100%;
+  background-color:  #252525; /* Keep existing color */
+  padding: 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Space between SVG and text */
+}
+
+.header-content {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.header-content svg {
+  align-item: Center; /* Space between icon and text */
+  
+}
+
+.header-text {
+  margin-left: 30px; /* Add space on the left of the text */
+  text-align: right; /* Align text to the right */
+}
+
+h2, h3 {
+  margin: 0; /* Remove default margins */
+}
+
+h2 {
+  font-size: 30px; /* Change this value to your desired font size */
+}
+
+h3 {
+  margin-top: 10px; /* Space between title and subtitle */
+  color: white; /* Keep existing color */
+  font-family: 'Dancing Script', cursive; /* Different font for h3 */
+  font-size: 14px; /* Optional: specify a different font size */
+  background: linear-gradient(90deg, red, orange, white, white, indigo, violet);
+  background-size: 200%; /* Increase size for better animation effect */
+  -webkit-background-clip: text; /* Clip background to text for Safari */
+  background-clip: text; /* Clip background to text */
+  color: transparent; /* Make the text transparent to show gradient */
+  animation: sweep 4s linear infinite; /* Animation for sweeping effect */
+}
+
+/* Gradient Sweep Animation */
+@keyframes sweep {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sidebar, .main-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-button {
+  width: 220px;
+  padding: 10px;
+  background-color:  #252525;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.data-table th, .data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #00796b;
+  color:  white;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,28 @@
+{
+    "name": "jGPS Data Collector",
+    "short_name": "jGPS",
+    "start_url": "index.html",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA"
+    ],
+    "iconUrl": "https://github.com/january-msemakweli/jGPS/blob/main/logo.png"
+}
