@@ -6,7 +6,7 @@
   "author": "January G. Msemakweli",
   "email": "msemakwelijanuary@gmail.com",
   "manifest_version": 2,
-  "host": "january-msemakweli.github.io"
+  "host": "january-msemakweli.github.io",
   "start_url": "/index.html",
   "display": "standalone",
   "orientation": "portrait",
