@@ -10,7 +10,7 @@ body {
 
   /* Add animation for background color */
   background: linear-gradient(45deg, #ff69b4, #8a2be2, #ffb6c1, #9370db);
-  background-size: 800% 800%;
+  background-size: 400% 800%;
   animation: animateBackground 8s ease infinite;
 }
 
